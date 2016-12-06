@@ -21,9 +21,13 @@ public class Main {
   ArrayList<Animal> omnivores = new ArrayList<>();
 
   public Main() {
-    // Write your code here
-
-
+    for(animal i: originalList){
+      if(i.getType().equals("herbivore"))
+        herbivores.add(i);
+      else if(i.getType().equals("carnivore"))
+        carnivores.add(i);
+      else if(i.getType().equals("omnivore"))
+        omnivores.add(i);
   }
   public static void main(String[] args) {
     new Main();
